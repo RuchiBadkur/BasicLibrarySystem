@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basic Library System</title>
+</head>
+<body>
+    <!-- Design a Sticky Navigation Bar (30 marks)-->
+    <!--Use CSS to create a sticky navigation bar at the top of the webpage. 
+        The navigation bar should include two links: "Books" and "Register". 
+        Make sure the navigation bar remains at the top of the page even when scrolling.
+    On the click of books, take the user to the books section and on the click of register make sure to take the user to the re==form section. (Hint: You can do this using ids and smooth scrolling
+    Style the navigation bar to your liking. You can be creative with the colors, typography, and layout. -->
+
+    <!-- Navbar -->
+    <section id="header">
+        <a href="#">Library System</a>
+
+        <div id="nav">
+            <ul>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Create a Table of Books (30 marks)
+    Create a table displaying a list of books. Each row in the table should include the following columns: Book ID, Title, Author, Genre, and Availability.
+    Embed a nested table within each cell of the "Title" column. The nested table should include additional information about the book like Publication Date, Page Count, and ISBN. The nested table should be visible without any need for user interaction
+    Populate the table with at least 5 rows of your own data. Be creative -->
+
+    <!-- Books -->
+    <section id="books">
+        <div>
+            <h2>Books</h2>
+            <table>
+                
+                <tr class="labels">
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <a href="">Book Title 1</a>
+                        <div class="description">
+                            <p>Publication Date: 2000</p>
+                            <p>Page Count: 250</p>
+                            <p>ISBN: 123-4567890123</p>
+                        </div>
+                    </td>
+                    <td>Author Name 1</td>
+                    <td>Genre 1</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <a href="">Book Title 2</a>
+                        <div class="description">
+                            <p>Publication Date: 2005</p>
+                            <p>Page Count: 300</p>
+                            <p>ISBN: 123-4567890123</p>
+                        </div>
+                    </td>
+                    <td>Author Name 2</td>
+                    <td>Genre 2</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <a href="">Book Title 3</a>
+                        <div class="description">
+                            <p>Publication Date: 2010</p>
+                            <p>Page Count: 350</p>
+                            <p>ISBN: 123-4567890123</p>
+                        </div>
+                    </td>
+                    <td>Author Name 3</td>
+                    <td>Genre 3</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Design a Registration Form (25 marks)
+    Create a registration form with the following input fields: First Name, Last Name, Email, Date of Birth, Age, Password, Confirm Password. Each field should be correctly labeled.
+    Make sure that Age has a minimum value of 5 and a maximum value of 100. Age input should be of the type of number.
+    Make sure all the values in the form are required. -->
+
+    <!-- Register form -->
+    <section id="register">
+        <div>
+            <h2>Register</h2>
+            <form action="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required>
+
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" required>
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" required>
+
+                <label for="pass">Password</label>
+                <input type="password" id="pass" required>
+
+                <label for="cpass">Confirm Password</label>
+                <input type="password" id="cpass" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

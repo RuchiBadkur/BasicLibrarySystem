@@ -1,0 +1,113 @@
+
+body{
+margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#header{
+    position: sticky;
+    top:0px;
+    left:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#header a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+#nav ul{
+    display: flex; 
+    list-style: none;
+}
+
+#nav ul li{
+    padding: 0px 30px;
+}
+
+#books{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px 600px;
+    padding: 20px 0px;
+    background-color: lavender;
+    margin-bottom: 50px;
+    box-shadow: 5px 10px 8px 10px #888888
+}
+
+.labels th{
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgb(144, 137, 137);
+}
+
+td{
+    padding: 40px 20px;
+    border: 1px solid rgb(144, 137, 137);
+    font-weight: 500;
+}
+
+.description {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.description p{
+    border: 1px solid rgb(144, 137, 137);
+    margin: 0;
+    padding: 10px;
+}
+
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px 600px;
+    padding: 20px 0px;
+    background-color: lavender;
+    margin-top: 50px;
+    box-shadow: 5px 10px 8px 10px #888888
+}
+#register div{
+    width: 90%;
+}
+
+#register div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#register div form label, 
+#register div form input{
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+#register div form label{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+#register div form button{
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 20px;
+    padding:10px;
+    background-color: rgb(49, 48, 48);
+    color: rgb(237, 228, 228);
+    border-radius: 4px;
+}
+
